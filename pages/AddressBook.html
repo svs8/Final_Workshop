@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/logo.png">
+    <link rel="stylesheet" href="../css/addressBook.css">
+    <title>Address Book Form</title>
+</head>
+
+<!-- UC1 -->
+<body>
+    <header class="header-content header">
+      <div class="logo-content">
+          <img src="../assets/logo.png" alt="">
+         <div>
+           <span class="address-text">Address</span><br>
+            <span class="address-text address-book">Book</span><br>
+            </div>
+        </div>
+    </header>
+<!-- UC2 -->
+    <div class="form-content">
+        <div class="form-head">
+            <span> PERSON ADDRESS FORM </span>
+        </div>
+        <!-- UC3 -->
+        <form class="form" action="#" onsubmit="save(); false">
+            <label class="label text" for="name">Full Name</label>
+            <div class="row-content">
+                <input class="input" type="text" id="name" name="name" placeholder="Enter Name" required>
+                <error-output class="text-error" for="text"></error-output>
+            </div>
+
+            <label class="label text" for="phone">Phone Number</label>
+            <div class="row-content">
+                <input class="input" type="number" id="phone" name="phone" placeholder="Enter Phone Number" required>
+                <error-output class="phone-error" for="number"></error-output>
+            </div>
+
+            <label class="label text" for="address">Address</label>
+            <div class="row-content">
+                <textarea class="input" name="address" id="address" rows="4" placeholder="Enter Address"></textarea>
+                <error-output class="address-error" for="address"></error-output>
+            </div>
+
+            <div class="row">
+              <div class="input-content">
+                <label class="label text" for="city">City</label>
+                  <div class="row-content">
+                    <select class="input" name="city" id="city">
+                        <option value="">City</option>
+                        <option value="Bangalore">Bangalore</option>
+                        <option value="Chennai">Chennai</option>
+                        <option value="Kochi">Kochi</option>
+                        <option value="Pune">Pune</option>
+                        <option value="Hydarabad">Hydarabad</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="input-content">
+                    <label class="label text" for="state">State</label>
+                    <div class="row-content">
+                        <select class="input" name="state" id="state">
+                      <option value="">State</option>
+                      <option value="Karnataka">Karnataka</option>
+                      <option value="TamilNadu">TamilNadu</option>
+                      <option value="Kerala"> Kerala</option>
+                      <option value="Maharashtra">Maharashtra</option>
+                        <option value="AndraPradesh">AndraPradesh</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="input-content">
+                    <label class="label text" for="zip">ZipCode</label>
+                    <div class="row-content">
+                        <input class="input" type="number" id="zip" name="zip" placeholder="Enter Zip Code" required>
+                        <error-output class="zip-error" for="number"></error-output>
+                    </div>
+                </div>
+            </div>
+            <div class="buttonParent">
+                <div class="add-reset">
+                    <button type="submit" class="button addButton" id="addButton">Add</button>
+                    <button type="reset" class="resetButton button" id="resetButton">Reset</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="../js/address_book.js"></script>
+    <script src="../js/Contacts.js"></script>
+  
+</body>
+
+</html>

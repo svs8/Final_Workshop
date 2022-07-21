@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../css/home.css">
+    <title>Address Book App</title>
+</head>
+<body>
+
+	<header class="header-content header">
+		<div class="logo-content">
+			<img src="../assets/logo.png" alt="" />
+			<div>
+				<span class="add-text">ADDRESS</span><br />
+				<span class="add-text add-book">BOOK</span>
+			</div>
+		</div>
+  </header>
+
+	<div class="main-content">
+		<div class="header-content">
+			<div class="add-detail-text">Person Details<div class="emp-count"></div>
+			</div>
+			<a href="../pages/AddressBook.html" class="add-button">
+			<img src="../assests/add-24px.svg" alt="" /> Add User</a>
+		</div>
+
+		<div class="table-main">
+			<table id="table-display" class="table">
+				<div class="main">
+				 <!-- <tr> -->
+					<th>Fullname</th>
+					<th>Address</th>
+					<th>City</th>
+					<th>State</th>
+					<th>Zip Code</th>
+                    <th>Phone Number</th>
+				<!-- </tr> -->
+				</div>
+
+				<tr>
+					<td>Surakshith</td>
+					<td>VS</td>
+					<td>Mangalore</td>
+					<td>Karnataka</td>
+					<td>671324</td>
+					<td>9744039184</td>
+                    <td>
+						<img id="1" onclick="remove(this)" alt="delete" src="../assets/icons/delete-black-18dp.svg">
+						<img id="1" alt="edit" onclick="upgate(this)" src="../assets/icons/create-black-18dp.svg">
+					</td> 
+				</tr> 
+				<tr>
+					<td>Rakshith</td>
+					<td>VS</td>
+					<td>Mangalore</td>
+					<td>Karnataka</td>
+					<td>671324</td>
+					<td>7907171097</td>
+                    <td>
+						<img id="1" onclick="remove(this)" alt="delete" src="../assets/icons/delete-black-18dp.svg">
+						<img id="1" alt="edit" onclick="upgate(this)" src="../assets/icons/create-black-18dp.svg">
+					</td> 
+				</tr>
+				<tr>
+					<td>Sachin</td>
+					<td>Kumar</td>
+					<td>Bangalore</td>
+					<td>Karnataka</td>
+					<td>973526</td>
+					<td>672828292</td>
+                    <td>
+						<img id="1" onclick="remove(this)" alt="delete" src="../assets/icons/delete-black-18dp.svg">
+						<img id="1" alt="edit" onclick="upgate(this)" src="../assets/icons/create-black-18dp.svg">
+					</td> 
+			</table>
+		</div>
+	</div>
+	<!-- <script src="../js/home.js"></script>
+	<script src="../js/utility.js"></script>
+	<script src="../js/siteProperties.js"></script>
+	<script src="../js/EmpPayroll.js"></script> -->
+</body>
+</html>
